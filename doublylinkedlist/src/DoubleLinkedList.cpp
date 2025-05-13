@@ -18,7 +18,6 @@ DoubleLinkedList::~DoubleLinkedList()
     head = nullptr;
 }
 
-
 void DoubleLinkedList::push_front(int val) 
 {   
     Node* current  = new Node(val) ;
