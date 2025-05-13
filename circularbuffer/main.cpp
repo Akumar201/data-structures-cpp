@@ -13,8 +13,5 @@ int main()
     cf.dequeue(x); std::cout << "Dequeued: " << x << "\n"; // 1
     cf.print() ;
 
-
-
-
-
+    return 1 ;
 }

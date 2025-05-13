@@ -25,6 +25,7 @@ bool CircularBuffer::enqueue(int val)
     return true ;
 
 }
+
 // overwritting as soon as we are getting new values
 // void CircularBuffer::enqueue(int val) {
 //     buffer[tail] = val;
@@ -66,9 +67,10 @@ void CircularBuffer::print() const
     {
         return ; 
     }
-
+    
+    idx = head;
     std::cout << "Buffer: ";
-    for (int i = 0, idx = head; i < count; ++i) {
+    for (int i = 0 i < count; ++i) {
         std::cout << buffer[idx] << " ";
         idx = (idx + 1) % capacity;
     }
