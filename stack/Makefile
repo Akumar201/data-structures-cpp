@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -std=c++17 -Wall -Iinclude
 
-SRCS = main.cpp src/Stack.cpp src/Stack_linkedlist.cpp
+SRCS = main.cpp src/Stack.cpp src/Stack_linkedlist.cpp src/Stack_queue.cpp
 OBJS = $(SRCS:.cpp=.o)
 TARGET = main
 
